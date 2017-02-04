@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FECEED291E467EE200282CCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED281E467EE200282CCA /* AppDelegate.swift */; };
-		FECEED2B1E467EE200282CCA /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED2A1E467EE200282CCA /* RootViewController.swift */; };
-		FECEED2D1E467EE200282CCA /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED2C1E467EE200282CCA /* DataViewController.swift */; };
-		FECEED2F1E467EE200282CCA /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED2E1E467EE200282CCA /* ModelController.swift */; };
+		FECEED2B1E467EE200282CCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED2A1E467EE200282CCA /* ViewController.swift */; };
 		FECEED321E467EE200282CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECEED301E467EE200282CCA /* Main.storyboard */; };
 		FECEED341E467EE200282CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECEED331E467EE200282CCA /* Assets.xcassets */; };
 		FECEED371E467EE200282CCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECEED351E467EE200282CCA /* LaunchScreen.storyboard */; };
@@ -38,9 +36,7 @@
 /* Begin PBXFileReference section */
 		FECEED251E467EE200282CCA /* germanirregularverbs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = germanirregularverbs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECEED281E467EE200282CCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FECEED2A1E467EE200282CCA /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		FECEED2C1E467EE200282CCA /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		FECEED2E1E467EE200282CCA /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		FECEED2A1E467EE200282CCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FECEED311E467EE200282CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FECEED331E467EE200282CCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FECEED361E467EE200282CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,9 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				FECEED281E467EE200282CCA /* AppDelegate.swift */,
-				FECEED2A1E467EE200282CCA /* RootViewController.swift */,
-				FECEED2C1E467EE200282CCA /* DataViewController.swift */,
-				FECEED2E1E467EE200282CCA /* ModelController.swift */,
+				FECEED2A1E467EE200282CCA /* ViewController.swift */,
 				FECEED301E467EE200282CCA /* Main.storyboard */,
 				FECEED331E467EE200282CCA /* Assets.xcassets */,
 				FECEED351E467EE200282CCA /* LaunchScreen.storyboard */,
@@ -265,9 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FECEED2B1E467EE200282CCA /* RootViewController.swift in Sources */,
-				FECEED2F1E467EE200282CCA /* ModelController.swift in Sources */,
-				FECEED2D1E467EE200282CCA /* DataViewController.swift in Sources */,
+				FECEED2B1E467EE200282CCA /* ViewController.swift in Sources */,
 				FECEED291E467EE200282CCA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +503,7 @@
 				FECEED531E467EE200282CCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FECEED541E467EE200282CCA /* Build configuration list for PBXNativeTarget "germanirregularverbsTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +512,7 @@
 				FECEED561E467EE200282CCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FECEED571E467EE200282CCA /* Build configuration list for PBXNativeTarget "germanirregularverbsUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +521,7 @@
 				FECEED591E467EE200282CCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
