@@ -6,26 +6,74 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--View Controller-->
         <scene sceneID="clB-vc-fyl">
             <objects>
-                <viewController id="703-4V-yAM" customClass="RootViewController" customModule="germanirregularverbs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="703-4V-yAM" customClass="ViewController" customModule="germanirregularverbs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I7W-xW-C47"/>
                         <viewControllerLayoutGuide type="bottom" id="IfR-02-kHw"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="502-Ir-ELC">
+                    <view key="view" contentMode="scaleToFill" id="502-Ir-ELC" customClass="View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="umZ-BL-Vau">
+                                <rect key="frame" x="16" y="44" width="343" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeZ-Ha-YlF">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Verb">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9b-nC-AOa">
+                                        <rect key="frame" x="0.0" y="30.5" width="343" height="20.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Tense type">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voY-ok-yDn">
+                                        <rect key="frame" x="0.0" y="61" width="343" height="30"/>
+                                        <state key="normal" title="Generate!"/>
+                                        <connections>
+                                            <action selector="setNewRandomVerbAndTense:" destination="703-4V-yAM" eventType="touchUpInside" id="reu-sI-b9t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="umZ-BL-Vau" firstAttribute="leading" secondItem="502-Ir-ELC" secondAttribute="leadingMargin" id="Ibv-AQ-R3c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="umZ-BL-Vau" secondAttribute="trailing" id="U31-gv-sad"/>
+                            <constraint firstItem="umZ-BL-Vau" firstAttribute="top" secondItem="I7W-xW-C47" secondAttribute="bottom" constant="24" id="VgE-fo-Kgt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentTenseLabel" destination="J9b-nC-AOa" id="X7K-SI-N4J"/>
+                        <outlet property="currentVerbLabel" destination="SeZ-Ha-YlF" id="385-ZG-DW9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-101" y="-243"/>
+            <point key="canvasLocation" x="-101.59999999999999" y="-243.32833583208398"/>
         </scene>
     </scenes>
 </document>

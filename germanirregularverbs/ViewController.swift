@@ -8,10 +8,20 @@
 
 import UIKit
 
-class RootViewController: UIViewController, UIPageViewControllerDelegate {
+class ViewController: UIViewController {
 
+    //MARK: Properties
+    @IBOutlet weak var currentVerbLabel: UILabel!
+    @IBOutlet weak var currentTenseLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    //MARK: Actions
+    @IBAction func setNewRandomVerbAndTense(_ sender: UIButton) {
+        currentVerbLabel.text = "New random verb! :)"
+        currentTenseLabel.text = "New random tense :)"
     }
 
 }
