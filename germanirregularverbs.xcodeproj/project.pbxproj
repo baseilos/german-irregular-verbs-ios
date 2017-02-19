@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE10D9D11E4775FD00947ABE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE10D9D01E4775FD00947ABE /* libsqlite3.tbd */; };
+		FE10D9D41E4776A400947ABE /* VerbModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE10D9D21E4776A400947ABE /* VerbModel.xcdatamodeld */; };
+		FE3EC40E1E586EC000CFC86B /* Verbs+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EC4061E586EC000CFC86B /* Verbs+CoreDataClass.swift */; };
+		FE3EC40F1E586EC000CFC86B /* Verbs+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EC4071E586EC000CFC86B /* Verbs+CoreDataProperties.swift */; };
+		FE3EC4101E586EC000CFC86B /* Preterites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EC4081E586EC000CFC86B /* Preterites+CoreDataClass.swift */; };
+		FE3EC4111E586EC000CFC86B /* Preterites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EC4091E586EC000CFC86B /* Preterites+CoreDataProperties.swift */; };
+		FE3EC4121E586EC000CFC86B /* Perfects+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EC40A1E586EC000CFC86B /* Perfects+CoreDataClass.swift */; };
+		FE3EC4131E586EC000CFC86B /* Perfects+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EC40B1E586EC000CFC86B /* Perfects+CoreDataProperties.swift */; };
+		FE3EC4141E586EC000CFC86B /* Translations+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EC40C1E586EC000CFC86B /* Translations+CoreDataClass.swift */; };
+		FE3EC4151E586EC000CFC86B /* Translations+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EC40D1E586EC000CFC86B /* Translations+CoreDataProperties.swift */; };
 		FECEED291E467EE200282CCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED281E467EE200282CCA /* AppDelegate.swift */; };
 		FECEED2B1E467EE200282CCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED2A1E467EE200282CCA /* ViewController.swift */; };
 		FECEED321E467EE200282CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECEED301E467EE200282CCA /* Main.storyboard */; };
@@ -34,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE10D9D01E4775FD00947ABE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FE10D9D31E4776A400947ABE /* VerbModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VerbModel.xcdatamodel; sourceTree = "<group>"; };
+		FE3EC4061E586EC000CFC86B /* Verbs+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Verbs+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FE3EC4071E586EC000CFC86B /* Verbs+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Verbs+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FE3EC4081E586EC000CFC86B /* Preterites+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Preterites+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FE3EC4091E586EC000CFC86B /* Preterites+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Preterites+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FE3EC40A1E586EC000CFC86B /* Perfects+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Perfects+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FE3EC40B1E586EC000CFC86B /* Perfects+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Perfects+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FE3EC40C1E586EC000CFC86B /* Translations+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Translations+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FE3EC40D1E586EC000CFC86B /* Translations+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Translations+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FECEED251E467EE200282CCA /* germanirregularverbs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = germanirregularverbs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECEED281E467EE200282CCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FECEED2A1E467EE200282CCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE10D9D11E4775FD00947ABE /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +95,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE10D9CF1E4775FD00947ABE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE10D9D01E4775FD00947ABE /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE3EC3D51E57708E00CFC86B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FE3EC4061E586EC000CFC86B /* Verbs+CoreDataClass.swift */,
+				FE3EC4071E586EC000CFC86B /* Verbs+CoreDataProperties.swift */,
+				FE3EC4081E586EC000CFC86B /* Preterites+CoreDataClass.swift */,
+				FE3EC4091E586EC000CFC86B /* Preterites+CoreDataProperties.swift */,
+				FE3EC40A1E586EC000CFC86B /* Perfects+CoreDataClass.swift */,
+				FE3EC40B1E586EC000CFC86B /* Perfects+CoreDataProperties.swift */,
+				FE3EC40C1E586EC000CFC86B /* Translations+CoreDataClass.swift */,
+				FE3EC40D1E586EC000CFC86B /* Translations+CoreDataProperties.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		FECEED1C1E467EE200282CCA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +125,7 @@
 				FECEED401E467EE200282CCA /* germanirregularverbsTests */,
 				FECEED4B1E467EE200282CCA /* germanirregularverbsUITests */,
 				FECEED261E467EE200282CCA /* Products */,
+				FE10D9CF1E4775FD00947ABE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +142,14 @@
 		FECEED271E467EE200282CCA /* germanirregularverbs */ = {
 			isa = PBXGroup;
 			children = (
+				FE3EC3D51E57708E00CFC86B /* model */,
 				FECEED281E467EE200282CCA /* AppDelegate.swift */,
 				FECEED2A1E467EE200282CCA /* ViewController.swift */,
 				FECEED301E467EE200282CCA /* Main.storyboard */,
 				FECEED331E467EE200282CCA /* Assets.xcassets */,
 				FECEED351E467EE200282CCA /* LaunchScreen.storyboard */,
 				FECEED381E467EE200282CCA /* Info.plist */,
+				FE10D9D21E4776A400947ABE /* VerbModel.xcdatamodeld */,
 			);
 			path = germanirregularverbs;
 			sourceTree = "<group>";
@@ -259,8 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3EC4141E586EC000CFC86B /* Translations+CoreDataClass.swift in Sources */,
+				FE3EC40F1E586EC000CFC86B /* Verbs+CoreDataProperties.swift in Sources */,
 				FECEED2B1E467EE200282CCA /* ViewController.swift in Sources */,
+				FE3EC4101E586EC000CFC86B /* Preterites+CoreDataClass.swift in Sources */,
+				FE3EC4111E586EC000CFC86B /* Preterites+CoreDataProperties.swift in Sources */,
+				FE3EC4151E586EC000CFC86B /* Translations+CoreDataProperties.swift in Sources */,
+				FE3EC4131E586EC000CFC86B /* Perfects+CoreDataProperties.swift in Sources */,
+				FE10D9D41E4776A400947ABE /* VerbModel.xcdatamodeld in Sources */,
+				FE3EC40E1E586EC000CFC86B /* Verbs+CoreDataClass.swift in Sources */,
 				FECEED291E467EE200282CCA /* AppDelegate.swift in Sources */,
+				FE3EC4121E586EC000CFC86B /* Perfects+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +580,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE10D9D21E4776A400947ABE /* VerbModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE10D9D31E4776A400947ABE /* VerbModel.xcdatamodel */,
+			);
+			currentVersion = FE10D9D31E4776A400947ABE /* VerbModel.xcdatamodel */;
+			path = VerbModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FECEED1D1E467EE200282CCA /* Project object */;
 }
