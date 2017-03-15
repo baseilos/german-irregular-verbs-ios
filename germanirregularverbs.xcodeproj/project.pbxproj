@@ -24,6 +24,7 @@
 		FECEED371E467EE200282CCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECEED351E467EE200282CCA /* LaunchScreen.storyboard */; };
 		FECEED421E467EE200282CCA /* germanirregularverbsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED411E467EE200282CCA /* germanirregularverbsTests.swift */; };
 		FECEED4D1E467EE200282CCA /* germanirregularverbsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED4C1E467EE200282CCA /* germanirregularverbsUITests.swift */; };
+		FED391381E5FA0E700E27A8A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED391371E5FA0E700E27A8A /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		FECEED481E467EE200282CCA /* germanirregularverbsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = germanirregularverbsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECEED4C1E467EE200282CCA /* germanirregularverbsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = germanirregularverbsUITests.swift; sourceTree = "<group>"; };
 		FECEED4E1E467EE200282CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED391371E5FA0E700E27A8A /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		FE3EC3D51E57708E00CFC86B /* model */ = {
 			isa = PBXGroup;
 			children = (
+				FED391371E5FA0E700E27A8A /* DataController.swift */,
 				FE3EC4061E586EC000CFC86B /* Verbs+CoreDataClass.swift */,
 				FE3EC4071E586EC000CFC86B /* Verbs+CoreDataProperties.swift */,
 				FE3EC4081E586EC000CFC86B /* Preterites+CoreDataClass.swift */,
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3EC4141E586EC000CFC86B /* Translations+CoreDataClass.swift in Sources */,
+				FED391381E5FA0E700E27A8A /* DataController.swift in Sources */,
 				FE3EC40F1E586EC000CFC86B /* Verbs+CoreDataProperties.swift in Sources */,
 				FECEED2B1E467EE200282CCA /* ViewController.swift in Sources */,
 				FE3EC4101E586EC000CFC86B /* Preterites+CoreDataClass.swift in Sources */,

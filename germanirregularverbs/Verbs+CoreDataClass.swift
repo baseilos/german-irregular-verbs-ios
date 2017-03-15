@@ -11,5 +11,13 @@ import CoreData
 
 
 public class Verbs: NSManagedObject {
+    
+    @nonobjc public class func createVerb(translations: Set<Translations>, into: NSManagedObjectContext) -> Verbs {
+        let verb = NSEntityDescription.insertNewObject(forEntityName: "Verbs", into: into) as! Verbs
+        for translation in translations {
+            verb.addToTranslations(translation)
+        }
+        return verb
+    }
 
 }
