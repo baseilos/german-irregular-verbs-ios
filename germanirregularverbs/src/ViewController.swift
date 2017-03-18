@@ -19,23 +19,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let verbs = try? dataController.loadVerbs() else {
-            fatalError("Error unable to load verbs")
-        }
-        for verb in verbs {
-            for translation in verb.translations! {
-                let translationObj = translation as! Translations
-                print(translationObj.translation ?? "Translation is null")
-            }
-            print("---")
-        }
-        
     }
     
     //MARK: Actions
     @IBAction func setNewRandomVerbAndTense(_ sender: UIButton) {
         currentVerbLabel.text = "New random verb! :)"
         currentTenseLabel.text = "New random tense :)"
+        do {
+            try VerbLoader.initVerbs(dataController)
+            for verb in try dataController.loadVerbs() {
+                print ("\(verb.active), \(verb.perfects), \(verb.preterites), \(verb.translations)")
+            }
+        } catch {
+            print ("Unable to load verbs from files")
+        }
     }
 
 }

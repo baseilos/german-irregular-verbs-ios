@@ -14,37 +14,34 @@ public class Perfects: NSManagedObject {
     
     // MARK: Inner classes & structs
     public struct PerfectHolder: Hashable {
-        public private(set) var auxVerb: String {
+        
+        private var _auxVerb: String
+        public var auxVerb: String {
             get {
-                return self.auxVerb
-            }
-            set {
-                self.auxVerb = newValue
+                return self._auxVerb
             }
         }
         
-        public private(set) var perfect: String {
+        private var _perfect: String
+        public var perfect: String {
             get {
-                return self.perfect
-            }
-            set {
-                self.perfect = newValue
+                return self._perfect
             }
         }
         
         public var hashValue: Int {
             get {
-                return auxVerb.hashValue ^ perfect.hashValue
+                return _auxVerb.hashValue ^ _perfect.hashValue
             }
         }
         
         init(auxVerb: String, perfect: String) {
-            self.auxVerb = auxVerb
-            self.perfect = perfect
+            _auxVerb = auxVerb
+            _perfect = perfect
         }
         
         public static func == (lhs: PerfectHolder, rhs: PerfectHolder) -> Bool {
-            return lhs.auxVerb == rhs.auxVerb && lhs.perfect == rhs.perfect
+            return lhs._auxVerb == rhs._auxVerb && lhs._perfect == rhs._perfect
         }
     }
     

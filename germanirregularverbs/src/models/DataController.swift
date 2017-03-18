@@ -13,7 +13,7 @@ import UIKit
 class DataController: NSObject {
     
     // MARK: Properties
-    var managedObjectContext: NSManagedObjectContext
+    private var managedObjectContext: NSManagedObjectContext
 
     override init() {
         guard let modelURL = Bundle.main.url(forResource: "VerbModel", withExtension: "momd") else {
