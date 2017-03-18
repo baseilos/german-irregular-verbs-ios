@@ -43,16 +43,36 @@ class DataController: NSObject {
         return try managedObjectContext.fetch(fetchRequest)
     }
     
-    func saveVerb(translations: Set<String>) throws {
-        let _ = Verbs.createVerb(translations: getTranslations(translations: translations), into: managedObjectContext)
+    func clearAllVerbs() throws {
+        try managedObjectContext.execute(Verbs.deleteRequest())
+    }
+    
+    func saveVerb(isActive: Bool, translations: Set<String>, preterites: Set<String>, perfects: Set<Perfects.PerfectHolder>) throws {
+        let _ = Verbs.createVerb(isActive: isActive, translations: getTranslations(translations), perfects: getPerfects(perfects), preterites: getPreterites(preterites), into: managedObjectContext)
         try managedObjectContext.save()
     }
     
-    private func getTranslations(translations: Set<String>) -> Set<Translations> {
+    private func getTranslations(_ translations: Set<String>) -> Set<Translations> {
         var translatiionsMOs = Set<Translations>()
         for translation in translations {
-            translatiionsMOs.insert(Translations.createTranslation(translationString: translation, in: managedObjectContext))
+            translatiionsMOs.insert(Translations.createTranslation(translation, in: managedObjectContext))
         }
         return translatiionsMOs
+    }
+    
+    private func getPreterites(_ preterites: Set<String>) -> Set<Preterites> {
+        var preteritesMOs = Set<Preterites>()
+        for preterite in preterites {
+            preteritesMOs.insert(Preterites.createPreterite(preterite, in: managedObjectContext))
+        }
+        return preteritesMOs
+    }
+    
+    private func getPerfects(_ perfects: Set<Perfects.PerfectHolder>) -> Set<Perfects> {
+        var perfectsMOs = Set<Perfects>()
+        for perfect in perfects {
+            perfectsMOs.insert(Perfects.createPerfect(perfect, in: managedObjectContext))
+        }
+        return perfectsMOs
     }
 }

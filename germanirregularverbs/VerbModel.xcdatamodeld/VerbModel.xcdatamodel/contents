@@ -20,7 +20,7 @@
     <elements>
         <element name="Perfects" positionX="-261" positionY="-147" width="128" height="73"/>
         <element name="Preterites" positionX="277" positionY="-144" width="128" height="58"/>
-        <element name="Verbs" positionX="-36" positionY="54" width="128" height="118"/>
         <element name="Translations" positionX="25" positionY="-234" width="128" height="58"/>
+        <element name="Verbs" positionX="-36" positionY="54" width="128" height="120"/>
     </elements>
 </model>

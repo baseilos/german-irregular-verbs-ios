@@ -36,14 +36,6 @@ class ViewController: UIViewController {
     @IBAction func setNewRandomVerbAndTense(_ sender: UIButton) {
         currentVerbLabel.text = "New random verb! :)"
         currentTenseLabel.text = "New random tense :)"
-        
-        let translations: Set<String> = ["test", "test1"]
-        do {
-            try dataController.saveVerb(translations: translations)
-        } catch {
-            fatalError("Unable to save verb: \(error)")
-        }
-    
     }
 
 }

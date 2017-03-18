@@ -12,7 +12,7 @@ import CoreData
 
 public class Translations: NSManagedObject {
     
-    @nonobjc public class func createTranslation(translationString: String, in managedObjectContext: NSManagedObjectContext) -> Translations {
+    @nonobjc public class func createTranslation(_ translationString: String, in managedObjectContext: NSManagedObjectContext) -> Translations {
         let translation = NSEntityDescription.insertNewObject(forEntityName: "Translations", into: managedObjectContext) as! Translations
         translation.translation = translationString
         return translation

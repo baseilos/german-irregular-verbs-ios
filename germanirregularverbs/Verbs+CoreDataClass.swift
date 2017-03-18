@@ -12,10 +12,21 @@ import CoreData
 
 public class Verbs: NSManagedObject {
     
-    @nonobjc public class func createVerb(translations: Set<Translations>, into: NSManagedObjectContext) -> Verbs {
+    @nonobjc public class func deleteRequest() -> NSBatchDeleteRequest {
+        return NSBatchDeleteRequest(fetchRequest: NSFetchRequest<NSFetchRequestResult>(entityName: "Verbs"));
+    }
+    
+    @nonobjc public class func createVerb(isActive: Bool, translations: Set<Translations>, perfects: Set<Perfects>, preterites: Set<Preterites>, into: NSManagedObjectContext) -> Verbs {
         let verb = NSEntityDescription.insertNewObject(forEntityName: "Verbs", into: into) as! Verbs
+        verb.active = isActive
         for translation in translations {
             verb.addToTranslations(translation)
+        }
+        for perfect in perfects {
+            verb.addToPerfects(perfect)
+        }
+        for preterite in preterites {
+            verb.addToPreterites(preterite)
         }
         return verb
     }
