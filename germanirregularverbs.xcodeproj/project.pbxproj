@@ -29,6 +29,7 @@
 		FECEED371E467EE200282CCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECEED351E467EE200282CCA /* LaunchScreen.storyboard */; };
 		FECEED421E467EE200282CCA /* germanirregularverbsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED411E467EE200282CCA /* germanirregularverbsTests.swift */; };
 		FECEED4D1E467EE200282CCA /* germanirregularverbsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED4C1E467EE200282CCA /* germanirregularverbsUITests.swift */; };
+		FED5F0F51E91A461007CED1B /* ApplicationDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5F0F41E91A461007CED1B /* ApplicationDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		FECEED481E467EE200282CCA /* germanirregularverbsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = germanirregularverbsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECEED4C1E467EE200282CCA /* germanirregularverbsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = germanirregularverbsUITests.swift; sourceTree = "<group>"; };
 		FECEED4E1E467EE200282CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED5F0F41E91A461007CED1B /* ApplicationDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			children = (
 				FE1425AC1E7DACDA002FE69A /* VerbLoader.swift */,
 				FE1425BB1E7DAE38002FE69A /* Exception.swift */,
+				FED5F0F41E91A461007CED1B /* ApplicationDefaults.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				FE1425B11E7DACDA002FE69A /* Perfects+CoreDataProperties.swift in Sources */,
 				FE1425B51E7DACDA002FE69A /* Translations+CoreDataProperties.swift in Sources */,
 				FE1425AE1E7DACDA002FE69A /* AppDelegate.swift in Sources */,
+				FED5F0F51E91A461007CED1B /* ApplicationDefaults.swift in Sources */,
 				FE1425AF1E7DACDA002FE69A /* DataController.swift in Sources */,
 				FE1425BC1E7DAE38002FE69A /* Exception.swift in Sources */,
 			);

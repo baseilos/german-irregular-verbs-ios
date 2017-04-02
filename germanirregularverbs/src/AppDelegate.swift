@@ -12,7 +12,24 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var dataController = DataController()
+    
+    
+    func application(_ application: UIApplication,willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        // Override point for customization before application launch 
+        // Load Verbs if verbs has not been loaded before
+        do {
+            if (ApplicationDefaults.hasDataBeenInitialized()) {
+                try VerbLoader.initVerbs(dataController)
+                ApplicationDefaults.setDataHasBeenInitialized(true)
+            }
+            return true;
+        } catch {
+            print ("Unable to load verbs from files")
+            ApplicationDefaults.setDataHasBeenInitialized(false)
+            return false;
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

@@ -25,14 +25,6 @@ class ViewController: UIViewController {
     @IBAction func setNewRandomVerbAndTense(_ sender: UIButton) {
         currentVerbLabel.text = "New random verb! :)"
         currentTenseLabel.text = "New random tense :)"
-        do {
-            try VerbLoader.initVerbs(dataController)
-            for verb in try dataController.loadVerbs() {
-                print ("\(verb.active), \(verb.perfects), \(verb.preterites), \(verb.translations)")
-            }
-        } catch {
-            print ("Unable to load verbs from files")
-        }
     }
 
 }
