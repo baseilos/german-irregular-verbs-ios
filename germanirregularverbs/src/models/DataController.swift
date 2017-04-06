@@ -47,8 +47,8 @@ class DataController: NSObject {
         try managedObjectContext.execute(Verbs.deleteRequest())
     }
     
-    func saveVerb(isActive: Bool, translations: Set<String>, preterites: Set<String>, perfects: Set<Perfects.PerfectHolder>) throws {
-        let _ = Verbs.createVerb(isActive: isActive, translations: getTranslations(translations), perfects: getPerfects(perfects), preterites: getPreterites(preterites), into: managedObjectContext)
+    func saveVerb(isActive: Bool, present: String, translations: Set<String>, preterites: Set<String>, perfects: Set<Perfects.PerfectHolder>) throws {
+        let _ = Verbs.createVerb(isActive: isActive, present: present, translations: getTranslations(translations), perfects: getPerfects(perfects), preterites: getPreterites(preterites), into: managedObjectContext)
         try managedObjectContext.save()
     }
     

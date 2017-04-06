@@ -30,6 +30,8 @@
 		FECEED421E467EE200282CCA /* germanirregularverbsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED411E467EE200282CCA /* germanirregularverbsTests.swift */; };
 		FECEED4D1E467EE200282CCA /* germanirregularverbsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECEED4C1E467EE200282CCA /* germanirregularverbsUITests.swift */; };
 		FED5F0F51E91A461007CED1B /* ApplicationDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5F0F41E91A461007CED1B /* ApplicationDefaults.swift */; };
+		FED5F0F81E96E9F3007CED1B /* VerbTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5F0F71E96E9F3007CED1B /* VerbTableViewCell.swift */; };
+		FED5F0FA1E96EBA1007CED1B /* VerbTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5F0F91E96EBA1007CED1B /* VerbTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		FECEED4C1E467EE200282CCA /* germanirregularverbsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = germanirregularverbsUITests.swift; sourceTree = "<group>"; };
 		FECEED4E1E467EE200282CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FED5F0F41E91A461007CED1B /* ApplicationDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDefaults.swift; sourceTree = "<group>"; };
+		FED5F0F71E96E9F3007CED1B /* VerbTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbTableViewCell.swift; sourceTree = "<group>"; };
+		FED5F0F91E96EBA1007CED1B /* VerbTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		FE14259D1E7DACDA002FE69A /* src */ = {
 			isa = PBXGroup;
 			children = (
+				FED5F0F61E96E997007CED1B /* verblist */,
 				FE14259E1E7DACDA002FE69A /* AppDelegate.swift */,
 				FE14259F1E7DACDA002FE69A /* models */,
 				FE1425AB1E7DACDA002FE69A /* utils */,
@@ -212,6 +217,15 @@
 				FECEED4E1E467EE200282CCA /* Info.plist */,
 			);
 			path = germanirregularverbsUITests;
+			sourceTree = "<group>";
+		};
+		FED5F0F61E96E997007CED1B /* verblist */ = {
+			isa = PBXGroup;
+			children = (
+				FED5F0F71E96E9F3007CED1B /* VerbTableViewCell.swift */,
+				FED5F0F91E96EBA1007CED1B /* VerbTableViewController.swift */,
+			);
+			path = verblist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,7 +367,9 @@
 				FE1425B71E7DACDA002FE69A /* Verbs+CoreDataClass.swift in Sources */,
 				FE1425B91E7DACDA002FE69A /* VerbLoader.swift in Sources */,
 				FE1425B01E7DACDA002FE69A /* Perfects+CoreDataClass.swift in Sources */,
+				FED5F0FA1E96EBA1007CED1B /* VerbTableViewController.swift in Sources */,
 				FE1425B61E7DACDA002FE69A /* VerbModel.xcdatamodeld in Sources */,
+				FED5F0F81E96E9F3007CED1B /* VerbTableViewCell.swift in Sources */,
 				FE1425B41E7DACDA002FE69A /* Translations+CoreDataClass.swift in Sources */,
 				FE1425B21E7DACDA002FE69A /* Preterites+CoreDataClass.swift in Sources */,
 				FE1425B31E7DACDA002FE69A /* Preterites+CoreDataProperties.swift in Sources */,

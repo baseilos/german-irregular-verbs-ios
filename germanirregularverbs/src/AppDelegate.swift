@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization before application launch 
         // Load Verbs if verbs has not been loaded before
         do {
-            if (ApplicationDefaults.hasDataBeenInitialized()) {
+            if (true || ApplicationDefaults.hasDataBeenInitialized()) {
                 try VerbLoader.initVerbs(dataController)
                 ApplicationDefaults.setDataHasBeenInitialized(true)
             }

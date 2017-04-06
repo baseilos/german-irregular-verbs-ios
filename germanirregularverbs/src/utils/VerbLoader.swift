@@ -43,10 +43,11 @@ class VerbLoader {
         // Load verbs
         for verb in try String(contentsOfFile: verbsPath, encoding: .utf8).components(separatedBy: .newlines) {
             let verbParts = verb.components(separatedBy: .whitespaces)
+            let present = verbParts[0]
             let translations = parseValues(verbParts[4])
             let preterites = parseValues(verbParts[2])
-            let perfects = parsePerfects(isWithSein: verbsWithSein.contains(verbParts[0]), values: parseValues(verbParts[3]))
-            try dataController.saveVerb(isActive: true, translations: translations, preterites: preterites, perfects: perfects)
+            let perfects = parsePerfects(isWithSein: verbsWithSein.contains(present), values: parseValues(verbParts[3]))
+            try dataController.saveVerb(isActive: true, present: present, translations: translations, preterites: preterites, perfects: perfects)
         }
         
         

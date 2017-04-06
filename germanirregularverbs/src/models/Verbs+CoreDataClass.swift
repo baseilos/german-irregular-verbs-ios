@@ -16,8 +16,9 @@ public class Verbs: NSManagedObject {
         return NSBatchDeleteRequest(fetchRequest: NSFetchRequest<NSFetchRequestResult>(entityName: "Verbs"));
     }
     
-    @nonobjc public class func createVerb(isActive: Bool, translations: Set<Translations>, perfects: Set<Perfects>, preterites: Set<Preterites>, into: NSManagedObjectContext) -> Verbs {
+    @nonobjc public class func createVerb(isActive: Bool, present: String, translations: Set<Translations>, perfects: Set<Perfects>, preterites: Set<Preterites>, into: NSManagedObjectContext) -> Verbs {
         let verb = NSEntityDescription.insertNewObject(forEntityName: "Verbs", into: into) as! Verbs
+        verb.present = present
         verb.active = isActive
         for translation in translations {
             verb.addToTranslations(translation)
