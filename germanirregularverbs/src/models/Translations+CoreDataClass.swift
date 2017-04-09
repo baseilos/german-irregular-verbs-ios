@@ -17,5 +17,10 @@ public class Translations: NSManagedObject {
         translation.translation = translationString
         return translation
     }
+    
+    @nonobjc public class func convertToString(_ value: Any) -> String {
+        let translation = value as! Translations
+        return translation.translation!
+    }
 
 }

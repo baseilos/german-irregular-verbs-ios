@@ -17,5 +17,10 @@ public class Preterites: NSManagedObject {
         preterite.preterite = preteriteString
         return preterite
     }
+    
+    @nonobjc public class func convertToString(_ value: Any) -> String {
+        let preterite = value as! Preterites
+        return preterite.preterite!
+    }
 
 }

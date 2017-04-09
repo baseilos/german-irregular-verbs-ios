@@ -50,8 +50,7 @@ class VerbTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: VerbTableViewCell.CELL_IDENTIFIER, for: indexPath) as? VerbTableViewCell else {
             fatalError("The dequeued cell is of incorrect type")
         }
-        let verb = verbs[indexPath.row]
-        cell.verbLabel.text = verb.present
+        cell.setVerb(verbs[indexPath.row])
         return cell
     }
     

@@ -52,4 +52,9 @@ public class Perfects: NSManagedObject {
         return perfect
     }
     
+    @nonobjc public class func convertToString(_ value: Any) -> String {
+        let perfect = value as! Perfects
+        return perfect.auxverb! + " " + perfect.perfect!
+    }
+    
 }
