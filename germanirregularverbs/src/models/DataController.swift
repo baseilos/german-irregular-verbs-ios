@@ -52,6 +52,12 @@ class DataController: NSObject {
         try managedObjectContext.save()
     }
     
+    func updateVerb(_ verb: Verbs, isActive: Bool) throws {
+        let fetchedVerb = managedObjectContext.object(with: verb.objectID) as! Verbs
+        fetchedVerb.active = isActive
+        try managedObjectContext.save()
+    }
+    
     private func getTranslations(_ translations: Set<String>) -> Set<Translations> {
         var translatiionsMOs = Set<Translations>()
         for translation in translations {

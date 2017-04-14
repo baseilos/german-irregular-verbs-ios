@@ -17,6 +17,7 @@ class VerbTableViewCell: UITableViewCell {
     @IBOutlet weak var translationLabel: UILabel!
     @IBOutlet weak var perfectTenseLabel: UILabel!
     @IBOutlet weak var preteriteTenseLabel: UILabel!
+    @IBOutlet weak var activeStateLabel: UILabel!
     
     func setVerb(_ verb: Verbs) {
         presentTenseLabel.text = verb.present
@@ -24,19 +25,8 @@ class VerbTableViewCell: UITableViewCell {
             translationLabel.text = joinValues(translations, mapFunc: Translations.convertToString)
             perfectTenseLabel.text = joinValues(perfects, mapFunc: Perfects.convertToString)
             preteriteTenseLabel.text = joinValues(preterites, mapFunc: Preterites.convertToString)
+            activeStateLabel.text = verb.active ? "Enabled" : "Disabled"
         }
-        
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     private func joinValues(_ set: NSSet, mapFunc: (Any) -> String) -> String {
